@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "serve": "webpack serve",
-    "dev": "live-server --open=./src",
-    "build": "npx tailwindcss -i ./src/styles/input.css -o ./dist/css/output.css --watch",
+    "dev": "live-server --open=./dist",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
