@@ -95,7 +95,38 @@ form input, form textarea {
     width: 100%;
     font-size: 1.1rem;
 }
+@layer components {
+    .btn {
+        @apply px-6 py-2 rounded-sm hover:bg-opacity-90;
+    }
+    div.slide > div {
+        @apply absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4 translate-y-full transition-transform duration-200 ease-out;
+    }
+    div.slide:hover > div {
+        @apply translate-y-0;
+    }
+}
 
 *:focus, *:active {
     outline: none;
+}
+
+
+/* Carousel */
+.slides-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.slides-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(-50%);
 }

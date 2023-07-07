@@ -55,12 +55,12 @@
     </div>
 
     <!-- Description -->
-    <div class="flex p-8  text-sm ">
+    <div class="bg-slate-100 p-8 text-sm ">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ut iure numquam non, amet, architecto animi placeat dolorum praesentium et consectetur reiciendis unde cupiditate sed nihil aspernatur eum fugit alias!</p>
     </div>
 
     <!-- Cards -->
-    <div class="child-wrapper w-full px-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-6 gap-3 mb-4">
+    <div class="child-wrapper w-full px-8 xl:px-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-6 gap-3 mb-4">
         <div class="aspect-square bg-slate-300 flex justify-center items-center">
             1
         </div>
@@ -99,7 +99,7 @@
 <!-- Footer -->
 
     <footer class="w-full ">
-        <div class="mx-auto max-w-7xl py-8 grid grid-cols-2 text-slate-600 gap-4">
+        <div class="mx-auto max-w-6xl py-8 grid grid-cols-2 text-slate-600 gap-4">
             <div class="col-span-2 md:col-span-1 order-2 md:order-1 px-8">
                 <h3 class="font-semibold text-lg">About Us</h3>
                 <p class=" text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse doloribus architecto, omnis doloremque veritatis dolores velit odit iure ab pariatur voluptatum porro neque culpa nam debitis eaque odio? Soluta!</p>
@@ -107,18 +107,19 @@
             
             <div class="col-span-2 md:col-span-1 order-1 md:order-2 px-8">
                 Contact Form
-                <form>
+                <form class="flex flex-col">
                     <input name="name" autocomplete="false" type="text" placeholder="Your Name"/>
                     <input name="email" autocomplete="true" type="email" placeholder="Your Email Address"/>
                     <input name="phone" autocomplete="false" type="tel" inputmode="tel" placeholder="Your Phone Number"/>
                     <textarea name="message" rows="2" type="text" placeholder="Write A Message"></textarea>
-                    <button type="submit" class="my-2 text-cente mx-auto py-2 px-10 btn bg-amber-600 text-slate-200">Send</button>
+                    <div class="bg-amber-600 h-[2px] w-full"></div>
+                    <button type="submit" class="max-w-xs mb-2 text-center mx-auto py-2 px-10 btn bg-amber-600 text-slate-200 rounded-b-lg">Send</button>
                 </form>
             </div>
         </div>
 
         <div class="bg-gray-500 text-slate-200">
-            <div class="mx-auto max-w-7xl p-8 grid grid-cols-2 gap-y-16">
+            <div class="mx-auto max-w-6xl p-8 grid grid-cols-2 gap-y-16">
 
                 <div class="col-span-2 lg:col-span-1 flex flex-col">
                 <span class="font-bold text-3xl ">Felopater</span>
