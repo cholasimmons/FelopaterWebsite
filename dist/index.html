@@ -46,7 +46,7 @@
 
 <!-- body -->
 
-  <div class="mx-auto max-w-6xl min-h-screen flex flex-col gap-y-2 md:gap-y-6">
+  <section class="mx-auto max-w-6xl min-h-screen flex flex-col gap-y-2 md:gap-y-6">
 
     <!-- Preview 1 -->
     <a href="/foodies" target="_self">
@@ -62,155 +62,78 @@
     </a>
 
     <!-- Breather 1 -->
-    <div id="app" class="w-full  bg-slate-100 md:drop-shadow-xl transition-all duration-500 ease-linear px-4 md:px-8">
+    <div class="w-full bg-slate-50 px-4 md:px-8">
       <h3 class="py-8 text-xl font-medium text-slate-600 text-center">Projects</h3>
-        <div class="relative">
-          <div class="w-full slides-container h-64 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden relative">
-              <div class="">
-                Title
-              </div>
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600" alt="mountain_image">
-            </div>
-            
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden relative">
-              <div class="">
-                <p>Project Title</p>
-                <small>dsd</small>
-              </div>
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/6263568/pexels-photo-6263568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-            </div>
+      
+        <div class="glide relative">
+          <div class="glide__track overflow-hidden" data-glide-el="track">
+            <ul class="glide__slides flex">
+              <a href="/1" target="_self">
+                <li class="glide__slide">
+                  <div >
+                    <div>
+                      <p>Project Title One</p>
+                      <small>dsd</small>
+                    </div>
+                    <img class="w-full h-full object-cover" src="media/projects/mountains1.webp" alt="">
+                  </div>
+                </li>
+              </a>
 
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/3026364/pexels-photo-3026364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-            </div>
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/10343729/pexels-photo-10343729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-            </div>
+              <a href="/2" target="_self">
+                <li class="glide__slide">
+                  <div >
+                    <div>
+                      <p>Project Title Two</p>
+                      <small>dsd</small>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./media/istockphoto-1205289671-1024x1024.jpg" alt="">
+                  </div>
+                </li>
+              </a>
 
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/13860053/pexels-photo-13860053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-            </div>
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/8576739/pexels-photo-8576739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-            </div>
-            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/1743367/pexels-photo-1743367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="mountain_image">
-            </div>
+              <a href="/1" target="_self">
+                <li class="glide__slide">
+                  <div >
+                    <div>
+                      <p>Project Title Three</p>
+                      <small>dsd</small>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./media/projects/mountains1.webp" alt="">
+                  </div>
+                </li>
+              </a>
+
+              <a href="/1" target="_self">
+                <li class="glide__slide">
+                  <div >
+                    <div>
+                      <p>Project Title Four</p>
+                      <small>dsd</small>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./media/istockphoto-1205289671-1024x1024.jpg" alt="">
+                  </div>
+                </li>
+              </a>
+            </ul>
           </div>
 
-          <div class="absolute top-0 -left-4 h-full items-center hidden md:flex">
-            <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group" aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
+
+          <div class="glide__arrows" data-glide-el="controls">
+
+            <button role="button" class="glide__arrow glide__arrow--left -left-6 prev p-3 rounded-full bg-neutral-100 text-orange-600 hover:bg-orange-400 hover:text-white group" data-glide-dir="<" aria-label="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 group-active:-translate-x-2 transition-all duration-200 ease-linear">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
               </svg>
             </button>
-          </div>
 
-          <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
-            <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group" aria-label="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
+            <button role="button" class="glide__arrow glide__arrow--right -right-6 next p-3 rounded-full bg-neutral-100 text-orange-600 hover:bg-orange-400 hover:text-white group" data-glide-dir=">" aria-label="next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 group-active:translate-x-2 transition-all duration-200 ease-linear">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </button>
           </div>
-        </div> <!-- relative end -->
-
-        <div class="glide relative mt-8" >
-          <div class="glide__track overflow-hidden" data-glide-el="track">
-            <ul class="glide__slides flex space-x-2">
-
-              <li class="glide__slide">
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg duration-300 ease-in-out">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    A
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK A
-                  </span>
-                </div>
-              </li>
-        
-              <li class="glide__slide">     
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    B
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK B
-                  </span>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    C
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK C
-                  </span>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    D
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK D
-                  </span>
-                </div>
-              </li> 
-              <li class="glide__slide">
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    E
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK E
-                  </span>
-                </div>
-              </li>
-
-              <li class="glide__slide">
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    F
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK F
-                  </span>
-                </div>
-              </li>
-
-              <li class="glide__slide">
-                <div class="relative flex flex-col text-center bg-gray-800 h-40 aspect-square items-center justify-center rounded-lg">
-                  <span class="text-5xl font-semibold px-6 py-4 bg-red-200 text-gray-800 rounded mb-4">
-                    G
-                  </span>
-                  <span class="text-red-200 font-bold">
-                    BLOCK G
-                  </span>
-                </div>
-              </li> 
-            </ul>
-          </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left -left-4" data-glide-dir="<">
-              <div class="h-9 w-9 bg-orange-600 text-white rounded-xl flex justify-center items-center my-auto hover:bg-orange-400 duration-300 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-              </div>
-            </button>
-            <button class="glide__arrow glide__arrow--right -right-4" data-glide-dir=">">
-              <div class="h-9 w-9 bg-orange-600 text-white rounded-xl flex justify-center items-center my-auto hover:bg-orange-400 duration-300 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-              </div>
-            </button>
-          </div>
         </div>
-        
       
       <p class="py-8 font-normal text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ratione laudantium consectetur suscipit ipsa at. Eaque, libero vero quia facere voluptatibus nobis reiciendis tenetur fugit magnam maiores nam exercitationem.</p>
     </div>
@@ -246,12 +169,12 @@
     </a>
 
      <!-- Breather 3 -->
-  <div class="w-full min-h-[12rem] flex flex-col items-center justify-center bg-green-600 text-slate-100 p-8">
-    <p class=" font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ratione laudantium consectetur suscipit ipsa at. Eaque, libero vero quia facere voluptatibus nobis reiciendis tenetur fugit magnam maiores nam exercitationem.</p>
-    <button type="button" class="btn text-xl font-bold bg-slate-100 text-green-600">Call Us</button>
-  </div>
+    <div class="w-full min-h-[12rem] flex flex-col items-center justify-center bg-green-600 text-slate-100 p-8 rounded-lg">
+      <p class=" font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloremque ratione laudantium consectetur suscipit ipsa at. Eaque, libero vero quia facere voluptatibus nobis reiciendis tenetur fugit magnam maiores nam exercitationem.</p>
+      <button type="button" class="mt-4 btn text-xl font-bold bg-slate-100 text-green-600">Call Us</button>
+    </div>
 
-  </div>
+  </section>
 
 <!-- Footer -->
 
@@ -279,9 +202,9 @@
 
           <div class="col-span-2 lg:col-span-1 flex flex-col">
             <span class="font-bold text-3xl ">Felopater</span>
-            <p class="font-light text-xs opacity-90">Kabelenga Road, Lusaka, Zambia</p>
+            <p class="font-light text-xs opacity-90">2400 Kabelenga Road, P.O Box 33647, Lusaka, Zambia</p>
             <div class="w-full flex mt-2">
-              <div class="w-6 h-6 rounded-full bg-slate-300 mr-3">f</div>
+              <a href="https://www.zambiayp.com/company/6892/Felopater_z_Ltd" target="zambiayp"><div class="w-6 h-6 rounded-full bg-slate-300 mr-3">yp</div></a>
               <div class="w-6 h-6 rounded-full bg-slate-300 mr-3">t</div>
               <div class="w-6 h-6 rounded-full bg-slate-300 mr-3">l</div>
             </div>
@@ -297,9 +220,6 @@
 </footer>
 </body>
 
-<script src="https://unpkg.com/@glidejs/glide"></script>
+<script src="js/glide.js"></script>
 <script src="./js/card-carousel.js"></script>
-<script lang="ts">
-  const padding = 8;
-</script>
 </html>
